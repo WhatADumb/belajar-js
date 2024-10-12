@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greetings(name){
+            return `<p>Hello ${name}</p>`
+        }
+
+        function getScore(value){
+            if(value > 90){
+                return 'A'
+            }else if(value > 70){
+                return 'B'
+            }else if(value > 50){
+                return 'C'
+            }else{
+                return 'D'
+            }
+        }
+
+        function findValueInArray(array, value){
+            for(let element of array){
+                if(element === value){
+                    return true
+                }
+            }
+
+            return false
+        }
+
+        console.log(greetings("Fadhil Firmansyah"))
+        console.log(getScore(75))
+        console.log(findValueInArray([1,2,3,4,5,6,7,8,9,0], 0))
+    </script>
+</body>
+</html>

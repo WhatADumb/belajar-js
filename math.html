@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let start = "<p>"
+        let end = "</p>"
+
+        // Basic Mathematic
+        let value1 = 20
+        let value2 = 10
+        
+        let result = value1 + value2
+        document.writeln(start + value1 + " + " + value2 + " = " + result + end)
+
+        result = value1 - value2
+        document.writeln(start + value1 + " - " + value2 + " = " + result + end)
+
+        result = value1 * value2
+        document.writeln(start + value1 + " x " + value2 + " = " + result + end)
+
+        result = value1 / value2
+        document.writeln(start + value1 + " / " + value2 + " = " + result + end)
+        let originalResult = result
+
+        result = value1 ** value2 //Exponential / pangkat
+        document.writeln(start + value1 + " ^ " + value2 + " = " + result + end)
+
+        // Assignment Operator
+        let value3 = 5
+
+        originalResult += value3 // 2 = 2 + 5
+        document.writeln(start + originalResult + end)
+
+        originalResult -= value3 // 7 = 7 - 5
+        document.writeln(start + originalResult + end)
+
+        originalResult *= value3 // 2 = 2 x 5
+        document.writeln(start + originalResult + end)
+
+        originalResult /= value3 // 10 = 10 / 5
+        document.writeln(start + originalResult + end)
+
+        // Unnary Operator
+        let value4 = +10
+        document.writeln(start + value4 + end)
+
+        value4 = -value4
+        document.writeln(start + value4 + end)
+
+        value4--;
+        document.writeln(start + value4 + end)
+
+        value4++;
+        document.writeln(start + value4 + end)
+    </script>
+</body>
+</html>

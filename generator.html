@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function* fetchName(){
+            yield "Fadhil"
+            yield "Firmansyah"
+        }
+        for(let name of fetchName()){
+            console.log(name)
+        }
+
+        function* fetchGanjil(value){
+            for(let i = 1; i <= value; i++){
+                if(i % 2 == 1){
+                    console.info(`Yield: ${i}`)
+                    yield i
+                }
+            }
+        }
+        for(let ganjil of fetchGanjil(50)){
+            console.log(ganjil)
+        }
+
+        function* fetchGenap(value){
+            for(let i = 1; i <= value; i++){
+                if(i % 2 == 0){
+                    console.info(`Yield: ${i}`)
+                    yield i
+                }
+            }
+        }
+        let genap = fetchGenap(50)
+        console.log(genap.next().value)
+        console.log(genap.next().value)
+        console.log(genap.next().value)
+    </script>
+</body>
+</html>

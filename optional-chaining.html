@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let datas = {}
+        let app = {
+            version: {
+                patch: "Major"
+            }
+        }
+        // let stats = datas.version.patch
+
+        // if(datas.version !== undefined || datas.version !== null){
+        //     stats = datas.version.patch
+        // }
+
+        let stats = datas?.version?.patch
+
+        console.log("Start")
+        console.info(stats)
+        console.log("Finish")
+    </script>
+</body>
+</html>

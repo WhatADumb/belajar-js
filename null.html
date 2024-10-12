@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value = null;
+        if(value === undefined){
+            console.error("Variable Undefined")
+        }else if(value === null){
+            console.warn("Variable Null")
+        }else{
+            console.debug("Variable Defined")
+        }
+
+        let empty= [null];
+        if(empty[0] === undefined){
+            console.error("Index Undefined")
+        }else if(value === null){
+            console.warn("Index Null")
+        }else{
+            console.debug("Index Defined")
+        }
+
+        let object = {
+            score: null
+        };
+        if(object.score === undefined){
+            console.error("Property Undefined")
+        }else if(value === null){
+            console.warn("Property Null")
+        }else{
+            console.debug("Property Defined")
+        }
+    </script>
+</body>
+</html>

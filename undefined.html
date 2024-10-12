@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value;
+        if(value === undefined){
+            console.error("Variable Undefined")
+        }else{
+            console.debug("Variable Defined")
+        }
+
+        let empty= [];
+        if(empty[1] === undefined){
+            console.error("Index Undefined")
+        }else{
+            console.debug("Index Defined")
+        }
+
+        let object = {};
+        if(object.score === undefined){
+            console.error("Property Undefined")
+        }else{
+            console.debug("Property Defined")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sayHello = (name) => {
+            console.info(`Hello ${name}`)
+        }
+        sayHello("Sugma")
+
+        const sumEvenOdd = (v1, v2) => (v1 + v2) % 2 == 1 ? "Hasil penjumlahan ganjil" : "Hasil penjumlahan genap"
+        console.log(sumEvenOdd(12, 21))
+
+        const serverError = () => console.error("Make sure this error")
+        serverError()
+
+        const serverWarning = message => console.warn(`Warning: ${message}`)
+        serverWarning("Just nothing")
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function helloWorld(){
+            console.log("Hello, World!!!")
+        }
+
+        let bio = {
+            name: "Fadhil Firmansyah",
+            helloName: function(name){
+                console.log(`Hello, ${name}`)
+            },
+            helloWorld: helloWorld
+        }
+
+        bio.hello = function(myName, name){
+            console.log(`Hello ${name}, my name is ${myName}`)
+        }
+
+        bio.hello("Fadhil", "Firmansyah")
+        bio.helloName("Fadhil Firmansyah")
+        bio.helloWorld()
+    </script>
+</body>
+</html>

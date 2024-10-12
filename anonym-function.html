@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let greet = function(name){
+            document.writeln(`<p>Hello ${name}</p>`)
+        }
+        greet("Fadhil Firmansyah")
+
+        function sayHelloPls(name){
+            name("Sigma Skibidi")
+        }
+        sayHelloPls(function(name){
+            document.writeln(`<p>Well, hello ${name}</p>`)
+        })
+    </script>
+</body>
+</html>

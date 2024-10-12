@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const singleton = {}
+        singleton["Nama"] = "Fadhil Firmansyah"
+        singleton["Prospect"] = "BackEnd Engineer"
+        singleton["Status"] = "Student"
+        singleton["Score"] = 3.9
+        console.table(singleton)
+
+        let bio = {
+            "Nama Lengkap": "Fadhil Firmansyah",
+            country: "Indonesia",
+            status: "Student",
+            career: "BackEnd Engineer",
+            age: 20,
+            credit: 'A'
+        }
+        console.table(bio)
+
+        delete bio.country
+        console.table(bio)
+        bio.country = "Indonesia"
+
+        console.log(`Hello Everyone, my name is ${bio["Nama Lengkap"]} im ${bio.age} years old`)
+    </script>
+</body>
+</html>

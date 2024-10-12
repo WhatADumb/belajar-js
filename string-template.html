@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstName = "Fadhil"
+        let middleName = ""
+        let lastName = "Firmansyah"
+        let score = 99
+        const template = `Name = ${firstName} ${lastName}, Having score: ${score}`
+
+        console.log(template)
+
+        const bio = `
+First Name = ${firstName}
+Middle Name = ${middleName}
+Last Name = ${lastName}
+Full Name = ${firstName} ${middleName} ${lastName}
+Achieve Score = ${score}
+        `
+        
+        console.info(bio)
+        
+        document.writeln("<pre>")
+        document.writeln(bio)
+        document.writeln("</pre>")
+    </script>
+</body>
+</html>

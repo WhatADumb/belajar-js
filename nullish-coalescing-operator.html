@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let parameter
+        let value = parameter
+
+        if(value === undefined || value === null){
+            value = "Parameter is not set"
+        }else{
+            value = "Parameter filled"
+        }
+        console.log(value)
+
+        value = parameter ?? "Parameter is not set"
+        console.log(value)
+    </script>
+</body>
+</html>

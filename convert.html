@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = 100
+        let number2 = "100"
+        let value = number1 + number2
+        document.writeln(`<p>${value}</p>`)
+
+        number1 = 100
+        number2 = "100"
+        value = number1 + parseInt(number2)
+        document.writeln(`<p>${value}</p>`)
+
+        let number3 = "123.321"
+        document.writeln(`<p>${number3}</p>`)
+        
+        number3 = "123.321"
+        document.writeln(`<p>${parseFloat(number3)}</p>`)
+
+        document.writeln(`<p>${Number(number2)} & ${Number(number3)}</p>`)
+
+        let data1 = "100 Bagus"
+        let data2 = "3.9 Cummlaude"
+
+        document.writeln(`<p>${data1}: ${parseInt(data1)} -> ${isNaN(parseInt(data1))}</p>`)
+        document.writeln(`<p>${data1}: ${Number(data1)} -> ${isNaN(Number(data1))}</p>`)
+
+        document.writeln(`<p>${data2}: ${parseFloat(data2)} -> ${isNaN(parseFloat(data2))}</p>`)
+        document.writeln(`<p>${data2}: ${Number(data2)} -> ${isNaN(Number(data2))}</p>`)
+
+        document.writeln(`<p>${number1.toString()}</p>`)
+        document.writeln(`<p>${(25).toString()}</p>`)
+    </script>
+</body>
+</html>

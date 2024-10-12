@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const empty = []
+
+        let name = ["Fadhil", "", "Firmansyah"]
+        console.log("First Name: " + name[0])
+        console.log("Middle Name: " + name[1])
+        console.log("Last Name: " + name[2])
+
+        let hobbies = ["Video Game", "Exercise"]
+        hobbies.push("Coding")
+        hobbies.push("Sleeping", "Studying", "Make some money")
+        console.table(hobbies)
+
+        delete hobbies[3]
+        console.table(hobbies)
+
+        hobbies[4] = "Oprec"
+        hobbies[3] = "Studying"
+        console.table(hobbies)
+        console.info("How many hobby do you have: " + hobbies.length)
+
+        const bio = ["Fadhil Firmansyah", 20, "College Student", 'A', ["IT", "DOSCOM"], 3.9]
+        console.table(bio)
+    </script>
+</body>
+</html>

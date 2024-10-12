@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let bio = ["Fadhil", "Firmansyah", 21, "AB", "Indonesia", true]
+            let [firstName, lastName, ...othersInfo] = bio
+            console.log(`Hello, ${firstName} ${lastName}`)
+
+            function sayFullName([firstName, lastName, status = "Mahasiswa"]){
+                console.info(`Hello ${firstName} ${lastName}, and you're a ${status}`)
+            }
+            sayFullName(bio)
+
+            console.table(othersInfo)
+        }
+
+        {
+            let objBio = {
+                firstName: "Fadhil",
+                lastName: "Firmansyah",
+                address: {
+                    state: "Indonesia",
+                    city: "Semarang"
+                },
+                alive: true,
+                bloodType: "AB"
+            }
+            let {firstName, lastName, address: {state, city}, ...othersInfo} = objBio
+            console.log(`Hello ${firstName} ${lastName}, you live in ${state} at ${city}`)
+            
+            function sayFullName({firstName, lastName, address: {city, state}, status = "Mahasiswa"}){
+                console.info(`Hello ${firstName} ${lastName}, you live in ${state} at ${city} as ${status}`)
+            }
+            sayFullName(objBio)
+
+            console.table(othersInfo)
+        }
+
+        let bio = ["Fadhil", "Firmansyah", 21, "AB", "Indonesia", true]
+        let [firstName] = bio
+        console.log(firstName)
+
+        let objBio = {
+            firstName: "Fadhil",
+            lastName: "Firmansyah",
+            address: {
+                state: "Indonesia",
+                city: "Semarang"
+            },
+            alive: true,
+            bloodType: "AB"
+        }
+        let {firstName: namaDepan} = objBio
+        console.log(namaDepan)
+    </script>
+</body>
+</html>

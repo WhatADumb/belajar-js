@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pS = "<p>"
+        let pE = "</p>"
+
+        let val1 = true
+        let val2 = false
+
+        let result = val1 && val2
+        document.writeln(pS + result + pE)
+
+        result = val1 || val2
+        document.writeln(pS + result + pE)
+
+        result = !val1
+        document.writeln(pS + result + pE)
+
+        result = !val2
+        document.writeln(pS + result + pE)
+    </script>
+</body>
+</html>

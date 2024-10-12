@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const apples = [10, 20, 30, 10, 20]
+
+        function sumOfFruits(name, ...datas){
+            let total = 0
+            for(data of datas){
+                total += data
+            }
+
+            document.writeln(`<p>${name} = ${total}</p>`)
+        }
+
+        sumOfFruits("Apple", 10, 20, 30, 10, 20)
+        sumOfFruits("Apple", ...[10, 20, 30, 10, 20])
+        sumOfFruits("Apple", ...apples)
+    </script>
+</body>
+</html>
